@@ -1,3 +1,11 @@
+var pageClickOrTouch = (function () {
+  if ('ontouchstart' in document) {
+    return 'touchstart';
+  } else {
+    return 'click';
+  };
+})();
+
 function ProgressBars () {
   this.barsWidth = 300;
   this.endPoint = {
@@ -100,7 +108,7 @@ function selectChange () {
   }
 }
 
-document.getElementById('function-button-list').addEventListener('click', function (event) {
+document.getElementById('function-button-list').addEventListener(pageClickOrTouch, function (event) {
   if (event.target.tagName != "BUTTON") {
     return
   };
