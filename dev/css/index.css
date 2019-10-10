@@ -1,0 +1,85 @@
+.header {
+  color: #333333;
+  font-weight: bold;
+}
+
+.function-section {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.function-section .select-comp {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.function-section #function-button-list {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.function-section #function-button-list button {
+  padding: 2px 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  color: #333333;
+  border-radius: 4px;
+  border: 1px solid #333333;
+}
+
+.function-section #function-button-list button:last-child {
+  margin-right: 0;
+}
+
+#bars-list .bars {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  height: 30px;
+  color: #333333;
+  font-weight: bold;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid #333333;
+  margin-bottom: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#bars-list .bars:last-child {
+  margin-bottom: 0;
+}
+
+#bars-list .bars .progress {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#bars-list .bars .normal {
+  background-color: lawngreen;
+}
+
+#bars-list .bars .warning {
+  background-color: red;
+}
+
+#bars-list .selected {
+  border-color: #1e90ff;
+}

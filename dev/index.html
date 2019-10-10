@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header>
-	    header top
-	</header>
-	<div>
-        test index
-	</div>
-	<footer>
-	    footer nav
-	</footer>
+	<header class="header">Progress Bars Demo</header>
+	<section class="function-section">
+		<div class="select-comp">
+			<select name="" id="select-bar" onchange="selectChange()"></select>
+			<option value=""></option>
+		</div>
+		<div id="function-button-list"></div>
+	</section>
+	<div id="bars-list"></div>
+	<script src="./js/index.js"></script>
 </body>
 </html>
